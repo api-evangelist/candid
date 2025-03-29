@@ -16,11 +16,11 @@ We aspire to create a social sector equipped to address the most pressing challe
 ## Timestamps
 
 - **Created:** 2025-03-01 
-- **Modified:** 2025-03-27 
+- **Modified:** 2025-03-29 
 
 ## APIs
 
-### Candid
+### Candid API
 We aspire to create a social sector equipped to address the most pressing challenges and opportunities of our time. To support this vision, Candid offers valuable information through Foundation Directory, helping nonprofits connect with funders who can advance their work. Likewise, funders rely on GuideStar to research and verify nonprofits that align with their priorities.
 
 **Human URL:** [https://candid.org](https://candid.org)
@@ -28,7 +28,7 @@ We aspire to create a social sector equipped to address the most pressing challe
 
 #### Tags:
 
- - Non-Profits, Charities
+ - Non-Profits, Charities, Donations
 
 #### Properties
 
