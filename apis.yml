@@ -1,36 +1,41 @@
-aid: adaptigent
+aid: candid
 url: >-
-  https://raw.githubusercontent.com/api-evangelist/adaptigent/refs/heads/main/apis.yml
+  https://raw.githubusercontent.com/api-evangelist/candid/refs/heads/main/apis.yml
 apis:
-  - aid: adaptigent:adaptigent
-    name: Adaptigent
+  - aid: candid:candid
+    name: Candid
     tags:
-      - Integrations
-      - Systems
-    humanURL: ' https://www.adaptigent.com/'
+      - Non-Profits
+      - Charities
+      - Donations
+    humanURL: https://candid.org
     properties:
-      - url: ' https://www.adaptigent.com/'
+      - url: https://candid.org
         type: Documentation
     description: >-
-      We help enterprises unlock the value of mission-critical core systems.
-      You’ve spent decades building a sophisticated environment that is the
-      backbone of your business. Now it’s time to empower that environment to
-      drive innovation and intelligently adapt to changing market conditions. 
-name: Adaptigent
+      We aspire to create a social sector equipped to address the most pressing
+      challenges and opportunities of our time. To support this vision, Candid
+      offers valuable information through Foundation Directory, helping
+      nonprofits connect with funders who can advance their work. Likewise,
+      funders rely on GuideStar to research and verify nonprofits that align
+      with their priorities.
+name: Candid
 tags:
-  - Integrations
-  - Systems
-type: Index
+  - Non-Profits
+  - Charities
+  - Donations
+type: Contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2025-03-01'
-modified: '2025-03-02'
-position: Consumer
+modified: '2025-03-29'
+position: Consuming
 description: >-
-  We help enterprises unlock the value of mission-critical core systems. You’ve
-  spent decades building a sophisticated environment that is the backbone of
-  your business. Now it’s time to empower that environment to drive innovation
-  and intelligently adapt to changing market conditions. 
+  We aspire to create a social sector equipped to address the most pressing
+  challenges and opportunities of our time. To support this vision, Candid
+  offers valuable information through Foundation Directory, helping nonprofits
+  connect with funders who can advance their work. Likewise, funders rely on
+  GuideStar to research and verify nonprofits that align with their priorities.
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com

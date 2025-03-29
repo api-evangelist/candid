@@ -1,37 +1,42 @@
-# Agrio (agrio)
-With our APIs, you can access data on weather patterns, pest and disease predictions, and more to build a more accurate crop advisory tool.
+# Candid (candid)
+We aspire to create a social sector equipped to address the most pressing challenges and opportunities of our time. To support this vision, Candid offers valuable information through Foundation Directory, helping nonprofits connect with funders who can advance their work. Likewise, funders rely on GuideStar to research and verify nonprofits that align with their priorities.
 
-**URL:** [Visit APIs.json URL](https://example.com/apis/agriculture-api-agrio.yml)
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/candid/refs/heads/main/apis.yml)
 
 ## Scope
 
+- **Type:** Contract 
+- **Position:** Consuming 
+- **Access:** 3rd-Party 
 
 ## Tags:
 
- - Agriculture
+ - Non-Profits, Charities, Donations
 
 ## Timestamps
 
-- **Created:** 2024-07-11 
-- **Modified:** 2024-11-10 
+- **Created:** 2025-03-01 
+- **Modified:** 2025-03-27 
 
 ## APIs
 
-### Agrio
-With our APIs, you can access data on weather patterns, pest and disease predictions, and more to build a more accurate crop advisory tool.  
+### Candid
+We aspire to create a social sector equipped to address the most pressing challenges and opportunities of our time. To support this vision, Candid offers valuable information through Foundation Directory, helping nonprofits connect with funders who can advance their work. Likewise, funders rely on GuideStar to research and verify nonprofits that align with their priorities.
 
-**Human URL:** [https://agrio.app/Agriculture-API/](https://agrio.app/Agriculture-API/)
+**Human URL:** [https://candid.org](https://candid.org)
 
 
+#### Tags:
+
+ - Non-Profits, Charities
 
 #### Properties
 
-- [Documentation](https://agrio.app/Agriculture-API/)
-- [OpenAPI](openapi/agrio-openapi-original.yml)
+- [Documentation](https://candid.org)
 
 ## Maintainers
 
-**FN:** API Evangelist
+**FN:** Kin Lane
 
 **Email:** info@apievangelist.com
 
