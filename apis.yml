@@ -3,9 +3,9 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/candid/refs/heads/main/apis.yml
 name: Candid
 tags:
-  - Non-Profits
   - Charities
   - Donations
+  - Non-Profits
   - Philanthropy
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -23,9 +23,9 @@ apis:
   - aid: candid:candid
     name: Candid API
     tags:
-      - Non-Profits
       - Charities
       - Donations
+      - Non-Profits
     humanURL: https://candid.org
     properties:
       - url: https://candid.org
