@@ -1,0 +1,241 @@
+openapi: 3.1.0
+info:
+  title: Candid Essentials API
+  description: >-
+    The Candid Essentials API provides core nonprofit search and lookup
+    over Candid's database of U.S. nonprofits. It supports search by name,
+    EIN, location, NTEE code, organization size, and other criteria, and
+    returns summary records suitable for autocompletes, lookups, and
+    basic-verification flows. Multiple versions (v1-v4) are available with
+    POST search and GET lookup variants.
+  version: 'v4'
+  contact:
+    name: Candid Developer Support
+    url: https://developer.candid.org/
+  termsOfService: https://developer.candid.org/
+externalDocs:
+  description: Candid Developer Documentation
+  url: https://developer.candid.org/reference/welcome
+servers:
+- url: https://api.candid.org/essentials
+  description: Candid Essentials API production server
+tags:
+- name: Search
+  description: Operations for searching the Candid nonprofit database.
+- name: Lookup
+  description: Operations for retrieving lookup values and filter metadata.
+security:
+- apiKeyAuth: []
+paths:
+  /v4:
+    post:
+      operationId: searchEssentialsV4
+      summary: Search Essentials v4
+      description: >-
+        Search Candid's database of U.S. nonprofits using the v4 search
+        endpoint, supporting flexible filters and faceted search.
+      tags:
+      - Search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+  /v3:
+    post:
+      operationId: searchEssentialsV3
+      summary: Search Essentials v3
+      description: Search Candid's database of U.S. nonprofits using the v3 search endpoint.
+      tags:
+      - Search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /v2:
+    post:
+      operationId: searchEssentialsV2
+      summary: Search Essentials v2
+      description: Search Candid's database of U.S. nonprofits using the v2 search endpoint.
+      tags:
+      - Search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /v1:
+    post:
+      operationId: searchEssentialsV1
+      summary: Search Essentials v1
+      description: Search Candid's database of U.S. nonprofits using the v1 search endpoint.
+      tags:
+      - Search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /lookup:
+    get:
+      operationId: listLookupFilters
+      summary: List Lookup Filters
+      description: >-
+        Returns the list of available lookup filters (e.g., NTEE codes,
+        states, subjects) supported by the Essentials API.
+      tags:
+      - Lookup
+      responses:
+        '200':
+          description: A list of available lookup filters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LookupListResponse'
+  /lookup/{filter_name}:
+    get:
+      operationId: getLookupByFilter
+      summary: Get Lookup Values for Filter
+      description: >-
+        Returns the available lookup values for a named filter (e.g.,
+        states, NTEE codes, subjects).
+      tags:
+      - Lookup
+      parameters:
+      - name: filter_name
+        in: path
+        required: true
+        description: Name of the lookup filter to retrieve values for.
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Lookup values for the requested filter.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LookupListResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /lookup/{filter_name}/{key_or_value}:
+    get:
+      operationId: getLookupByFilterAndKey
+      summary: Get Lookup Detail
+      description: >-
+        Returns the detail for a single lookup value within a filter, by
+        key or value.
+      tags:
+      - Lookup
+      parameters:
+      - name: filter_name
+        in: path
+        required: true
+        description: Name of the lookup filter.
+        schema:
+          type: string
+      - name: key_or_value
+        in: path
+        required: true
+        description: Key or value within the lookup filter to retrieve.
+        schema:
+          type: string
+      responses:
+        '200':
+          description: A single lookup detail record.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LookupItem'
+        '404':
+          $ref: '#/components/responses/NotFound'
+components:
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: Subscription-Key
+      description: Candid subscription key required to call the Essentials API.
+  responses:
+    BadRequest:
+      description: The request was malformed or contained invalid parameters.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    Unauthorized:
+      description: Authentication credentials are missing or invalid.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    NotFound:
+      description: The requested resource was not found.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+  schemas:
+    SearchRequest:
+      type: object
+      description: A generic search request object accepted by Essentials search endpoints.
+      additionalProperties: true
+    SearchResponse:
+      type: object
+      description: A generic search response object returned by Essentials endpoints.
+      additionalProperties: true
+    LookupListResponse:
+      type: object
+      description: A response wrapping a list of lookup items.
+      additionalProperties: true
+    LookupItem:
+      type: object
+      description: A single lookup item record.
+      additionalProperties: true
+    Error:
+      type: object
+      description: Generic error response.
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      additionalProperties: true
+x-generated-from: https://developer.candid.org/reference/welcome
+x-generated-by: claude-crawl-2026-05-08

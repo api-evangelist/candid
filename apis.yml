@@ -47,6 +47,8 @@ apis:
         url: https://developer.candid.org/reference/welcome
       - type: Portal
         url: https://developer.candid.org/
+      - type: OpenAPI
+        url: openapi/candid-essentials-api-openapi.yml
   - aid: candid:premier-api
     name: Candid Premier API
     description: >-
