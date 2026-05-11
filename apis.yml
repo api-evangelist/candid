@@ -197,6 +197,12 @@ common:
     url: https://candid.org/terms-of-use
   - type: Support
     url: https://help.candid.org/
+  - type: Integrations
+    url: https://candid.org/partners/
+integrations:
+  - name: Candid
+  - name: footer
+  - name: 'Candid''s 2026 Platinum Seal of Transparency'
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
