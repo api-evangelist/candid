@@ -1,0 +1,149 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Candid Essentials API",
+    "version": "v4"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Subscription-Key",
+      "value": "{{Subscription-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search Essentials v4",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.candid.org/essentials/v4",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search Candid's database of U.S. nonprofits using the v4 search endpoint, supporting flexible filters and faceted search."
+        },
+        {
+          "info": {
+            "name": "Search Essentials v3",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.candid.org/essentials/v3",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search Candid's database of U.S. nonprofits using the v3 search endpoint."
+        },
+        {
+          "info": {
+            "name": "Search Essentials v2",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.candid.org/essentials/v2",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search Candid's database of U.S. nonprofits using the v2 search endpoint."
+        },
+        {
+          "info": {
+            "name": "Search Essentials v1",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.candid.org/essentials/v1",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search Candid's database of U.S. nonprofits using the v1 search endpoint."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Lookup",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Lookup Filters",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.candid.org/essentials/lookup"
+          },
+          "docs": "Returns the list of available lookup filters (e.g., NTEE codes, states, subjects) supported by the Essentials API."
+        },
+        {
+          "info": {
+            "name": "Get Lookup Values for Filter",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.candid.org/essentials/lookup/:filter_name",
+            "params": [
+              {
+                "name": "filter_name",
+                "value": "",
+                "type": "path",
+                "description": "Name of the lookup filter to retrieve values for."
+              }
+            ]
+          },
+          "docs": "Returns the available lookup values for a named filter (e.g., states, NTEE codes, subjects)."
+        },
+        {
+          "info": {
+            "name": "Get Lookup Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.candid.org/essentials/lookup/:filter_name/:key_or_value",
+            "params": [
+              {
+                "name": "filter_name",
+                "value": "",
+                "type": "path",
+                "description": "Name of the lookup filter."
+              },
+              {
+                "name": "key_or_value",
+                "value": "",
+                "type": "path",
+                "description": "Key or value within the lookup filter to retrieve."
+              }
+            ]
+          },
+          "docs": "Returns the detail for a single lookup value within a filter, by key or value."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
