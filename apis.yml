@@ -1,7 +1,7 @@
 aid: candid
 name: Candid
 url: https://raw.githubusercontent.com/api-evangelist/candid/refs/heads/main/apis.yml
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 type: Index
 tags:
   - Charities
