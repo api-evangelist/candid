@@ -183,7 +183,7 @@ common:
     url: https://help.candid.org/
   - type: Integrations
     url: https://candid.org/partners/
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://developer.candid.org/llms.txt
 integrations:
   - name: Candid
