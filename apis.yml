@@ -161,6 +161,10 @@ apis:
       - type: Portal
         url: https://developer.candid.org/
 common:
+  - type: DomainSecurity
+    url: security/candid-domain-security.yml
+  - type: Authentication
+    url: authentication/candid-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/CandidOrg
   - type: LinkedIn

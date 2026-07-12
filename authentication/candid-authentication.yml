@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/candid-essentials-api-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: apiKeyAuth
+  type: apiKey
+  in: header
+  parameter: Subscription-Key
+  description: Candid subscription key required to call the Essentials API.
+  sources:
+  - openapi/candid-essentials-api-openapi.yml
