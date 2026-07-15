@@ -161,6 +161,8 @@ apis:
       - type: Portal
         url: https://developer.candid.org/
 common:
+  - type: AgenticAccess
+    url: agentic-access/candid-agentic-access.yml
   - type: DomainSecurity
     url: security/candid-domain-security.yml
   - type: Authentication
