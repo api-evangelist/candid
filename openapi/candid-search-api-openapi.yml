@@ -1,0 +1,145 @@
+openapi: 3.1.0
+info:
+  title: Candid Essentials Lookup Search API
+  description: The Candid Essentials API provides core nonprofit search and lookup over Candid's database of U.S. nonprofits. It supports search by name, EIN, location, NTEE code, organization size, and other criteria, and returns summary records suitable for autocompletes, lookups, and basic-verification flows. Multiple versions (v1-v4) are available with POST search and GET lookup variants.
+  version: v4
+  contact:
+    name: Candid Developer Support
+    url: https://developer.candid.org/
+  termsOfService: https://developer.candid.org/
+servers:
+- url: https://api.candid.org/essentials
+  description: Candid Essentials API production server
+security:
+- apiKeyAuth: []
+tags:
+- name: Search
+  description: Operations for searching the Candid nonprofit database.
+paths:
+  /v4:
+    post:
+      operationId: searchEssentialsV4
+      summary: Search Essentials v4
+      description: Search Candid's database of U.S. nonprofits using the v4 search endpoint, supporting flexible filters and faceted search.
+      tags:
+      - Search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+  /v3:
+    post:
+      operationId: searchEssentialsV3
+      summary: Search Essentials v3
+      description: Search Candid's database of U.S. nonprofits using the v3 search endpoint.
+      tags:
+      - Search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /v2:
+    post:
+      operationId: searchEssentialsV2
+      summary: Search Essentials v2
+      description: Search Candid's database of U.S. nonprofits using the v2 search endpoint.
+      tags:
+      - Search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+  /v1:
+    post:
+      operationId: searchEssentialsV1
+      summary: Search Essentials v1
+      description: Search Candid's database of U.S. nonprofits using the v1 search endpoint.
+      tags:
+      - Search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+components:
+  schemas:
+    SearchResponse:
+      type: object
+      description: A generic search response object returned by Essentials endpoints.
+      additionalProperties: true
+    SearchRequest:
+      type: object
+      description: A generic search request object accepted by Essentials search endpoints.
+      additionalProperties: true
+    Error:
+      type: object
+      description: Generic error response.
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      additionalProperties: true
+  responses:
+    Unauthorized:
+      description: Authentication credentials are missing or invalid.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    BadRequest:
+      description: The request was malformed or contained invalid parameters.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: Subscription-Key
+      description: Candid subscription key required to call the Essentials API.
+externalDocs:
+  description: Candid Developer Documentation
+  url: https://developer.candid.org/reference/welcome
+x-generated-from: https://developer.candid.org/reference/welcome
+x-generated-by: claude-crawl-2026-05-08
