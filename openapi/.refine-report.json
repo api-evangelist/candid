@@ -1,0 +1,16 @@
+{
+  "provider": "candid",
+  "sources": [
+    "candid-lookup-api-openapi.yml",
+    "candid-search-api-openapi.yml"
+  ],
+  "outputs": [
+    "candid-lookup-api-openapi.yml",
+    "candid-search-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
