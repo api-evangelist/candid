@@ -1,0 +1,110 @@
+# Candid's API Developer Portal Documentation
+
+> Candid's APIs and datasets allow users to access comprehensive, high-quality data about nonprofits, grants and news. Candid's developer portal, developer.candid.org, is a resource for developers supporting the social sector to discover, learn, test, and implement Candid's nonprofit data API. Also known as: GuideStar API, Essentials API, Search API, Profile API, Premier API, Charity Check API, Candid data, Candid datasets, Custom datasets, Snowflake Nonprofit Datasets
+
+## Guides
+- [Candid's data sources](https://developer.candid.org/docs/candids-data-sources.md): Candid gathers and shares the most comprehensive and reliable data about the social sector
+- [Candid's taxonomy](https://developer.candid.org/docs/candids-taxonomy.md): Leverage Candid's Philanthropy Classification System (PCS) Taxonomy in our APIs
+- [Location GeoNames](https://developer.candid.org/docs/location-geonames.md): Leverage GeoNames within our APIs for locational search
+- [For grantmaking](https://developer.candid.org/docs/candid-apis-for-grantmaking.md)
+- [Adopt Candid Seals of Transparency as an eligibility requirement](https://developer.candid.org/docs/guidestar-seal-as-eligibility-requirement.md): Incorporate a nonprofit's Seal of Transparency into your grant guidelines
+- [Prepopulate your grant application](https://developer.candid.org/docs/prepopulate-the-grant-application.md): Simplify the grant process using Candid’s nonprofit data
+- [Demographic data for grantmaking](https://developer.candid.org/docs/demographic-data-equitable-grantmaking.md)
+- [Validate organizations using Charity Check](https://developer.candid.org/docs/verification-using-charity-check.md)
+- [Whitelisting your website to bypass GuideStar registration](https://developer.candid.org/docs/whitelisting-your-website-to-bypass-registration.md)
+- [Salesforce integration partners](https://developer.candid.org/docs/integration-partners.md): Work with one of Candid's Salesforce integration partners to connect Candid APIs directly into your Salesforce instance.
+- [Candid connector by ImagineCRM](https://developer.candid.org/docs/candid-connector-by-imaginecrm.md): Sync Candid's APIs directly into Salesforce with a downloadable app
+- [Agile Cloud Consulting](https://developer.candid.org/docs/agile-cloud-consulting.md): Work with Agile Cloud Consulting to integrate Candid APIs directly into Salesforce
+- [Fíonta](https://developer.candid.org/docs/fionta.md): Work with Fíonta to connect Candid APIs to Salesforce
+- [Candid nonprofit demographics connector](https://developer.candid.org/docs/nonprofit-demographics-connector.md): Sync Candid's demographic data directly into Salesforce with an installed package.
+
+## API Reference
+- [Welcome to Candid's developer portal](https://developer.candid.org/reference/welcome.md): Candid's APIs provide access to comprehensive, high-quality information about nonprofits. This site is a resource for developers to discover, learn, test, and get support for Candid APIs.
+- [Get API access](https://developer.candid.org/reference/getting-access.md): How to get access to Candid's APIs to make your first trial call or purchase a subscription
+- [Whitelisting your website to bypass GuideStar registration](https://developer.candid.org/reference/whitelisting-your-website-to-bypass-guidestar-registration.md)
+- [Account management and authentication](https://developer.candid.org/reference/authentication.md)
+- [Status codes and rate limits](https://developer.candid.org/reference/rate-limits-and-thresholds.md): Understand status codes, rate limits, and usage thresholds
+- [OpenAPI Specification docs](https://developer.candid.org/reference/openapi.md)
+- [Running in Postman](https://developer.candid.org/reference/running-in-postman.md)
+- [Uptime and security](https://developer.candid.org/reference/status-and-uptime.md)
+- [Release management](https://developer.candid.org/reference/best-practices.md)
+- [/v1/opportunity](https://developer.candid.org/reference/get_v1-opportunity.md)
+- [/v1/profile](https://developer.candid.org/reference/get_v1-profile.md)
+- [/v1/search](https://developer.candid.org/reference/get_v1-search.md)
+- [Get started with Essentials](https://developer.candid.org/reference/get-started-with-essentials.md)
+- [Essentials API v4 search examples](https://developer.candid.org/reference/essentials-api-v4-search-examples.md): Make the most of Essentials v4 organization search with these helpful examples
+- [/essentials/v4](https://developer.candid.org/reference/essentials_v4.md): Enhanced search with additional features and improved performance.
+- [/essentials/v3](https://developer.candid.org/reference/essentials_v3.md): Make your searches more relevant and real-time with access to new filters and fields.
+- [/essentials/v2](https://developer.candid.org/reference/essentials_v2.md): Find nonprofits using variable search criteria and explore essential information.
+- [/essentials/v1](https://developer.candid.org/reference/essentials_v1.md): Find nonprofits using variable search criteria and explore essential information.
+- [/essentials/lookup](https://developer.candid.org/reference/essentials_lookup.md): Use the /lookup endpoint to retrieve a list of the tables that can be passed as a filter_name to the lookup detail endpoints. The tables and their contents can be used to generate dropdowns and filters in your system when using the Essentials API.
+- [/essentials/lookup/{filter_name}](https://developer.candid.org/reference/essentials_lookup_filter_name.md): Provides a list of all the human-readable search values within a specific filter_name table, which can then be used in search queries with the Essentials endpoints. Each array contains a table key, name value, and search value. The resulting search_value(s) can be passed as search values in the Essentials API.
+- [/essentials/lookup/{filter_name}/{key_or_value}](https://developer.candid.org/reference/essentials_lookup_filter_name_key_or_value.md): Lookup details on a specific filter using the known filter_name and key_or_value.  The resulting search_value can be passed as a search value in the Essentials API.
+- [Get started with Premier API](https://developer.candid.org/reference/get-started-with-premier-api.md)
+- [Premier API v4](https://developer.candid.org/reference/premier-api-v4.md)
+- [/premier/v4](https://developer.candid.org/reference/premier_v4.md): Use an EIN in the path parameter to retrieve enhanced data on a nonprofit's financials, people, DEI, IRS compliance validation, and impact metrics. This is the latest version with expanded fields and improved data structures.
+- [/premier/v3](https://developer.candid.org/reference/premier_v3.md): Use an EIN in the path parameter to retrieve data on a nonprofit's financials, people, DEI, and IRS compliance validation.
+- [/premier/v2](https://developer.candid.org/reference/premier_v2.md): Use an EIN in the path parameter to retrieve data on a nonprofit's financials, people, DEI, and IRS compliance validation. This endpoint is deprecated; use /premier/v4 instead.
+- [/premier/v1](https://developer.candid.org/reference/premier_v1.md): Use an EIN in the path parameter to retrieve data on a nonprofit's financials, people, DEI, and IRS compliance validation. This endpoint is deprecated; use /premier/v4 instead.
+- [/premier/v1/ftapdf](https://developer.candid.org/reference/premier_v1_ftapdf.md): Use an EIN in the path parameter to get a PDF of a nonprofit's financial trends analysis.
+- [/premier/v1/propdf](https://developer.candid.org/reference/premier_v1_propdf.md): Use an EIN in the path parameter to retrieve a PDF of a nonprofit's financials, people, DEI, and IRS compliance validation.
+- [Get started with Charity Check](https://developer.candid.org/reference/get-started-with-charity-check.md)
+- [Charity Check API](https://developer.candid.org/reference/charity-check-api.md): Use Candid to validate organizations to ensure donations are 100% compliant with the IRS.
+- [Interpret Charity Check data fields](https://developer.candid.org/reference/interpret-charity-check-data-fields.md)
+- [Charity Check example responses](https://developer.candid.org/reference/charity-check-example-responses.md)
+- [FAQs - Charity Check](https://developer.candid.org/reference/faqs-charity-check.md)
+- [State-level Charity Check - California](https://developer.candid.org/reference/state-level-charity-check-california.md)
+- [/charitycheck/v1](https://developer.candid.org/reference/charitycheck_v1.md): Validate nonprofit status and eligibility with a 100% IRS-compliant charity check.
+- [/charitycheck/v1/state](https://developer.candid.org/reference/charitycheck_v1_state.md): Check whether charitable organizations may or may not operate in California with Attorney General Registry and Franchise Tax Board data.
+- [Charity Check Bulk API](https://developer.candid.org/reference/charity-check-bulk-api.md): Validate up to 25 organizations at a time with our Charity Check Bulk API.
+- [/charitycheckbulk/v1](https://developer.candid.org/reference/charitycheckbulk_v1.md): Validate nonprofit status and eligibility of up to 25 organizations at a time with a 100% IRS-compliant charity check.
+- [Charity Check PDF API](https://developer.candid.org/reference/charity-check-pdf-api.md): Download a formatted Charity Check PDF and save it for your records.
+- [/charitycheckpdf/v2/pdf](https://developer.candid.org/reference/charitycheckpdf_v2.md): Generate a PDF report to validate nonprofit status and eligibility with a 100% IRS-compliant charity check.
+- [/charitycheckpdf/v1/pdf](https://developer.candid.org/reference/charitycheckpdf_v1.md): Generate a PDF report to validate nonprofit status and eligibility with a 100% IRS-compliant charity check.
+- [Get started with Demographics API](https://developer.candid.org/reference/get-started-with-demographics-api.md): Standardize your demographic data collection to make insightful, impactful, and equitable giving decisions.
+- [Organizational demographic data](https://developer.candid.org/reference/organizational-demographic-data.md)
+- [/demographics/v1](https://developer.candid.org/reference/demographics_v1.md): Use an EIN in the path parameter to retrieve data on a nonprofit's Demographics data.
+- [Get started with Grants API](https://developer.candid.org/reference/get-started-with-grants-api.md)
+- [FAQs - Grants API](https://developer.candid.org/reference/faqs-grants-api.md)
+- [/summary](https://developer.candid.org/reference/grants_summary.md): Search for total grant summaries that match the criteria specified.
+- [/funders](https://developer.candid.org/reference/grants_funders.md): Search for funders' grant activity based on the criteria specified. Returns a maximum of 25 results.
+- [/recipients](https://developer.candid.org/reference/grants_recipients.md): Search for recipient grant activity based on the criteria specified. Returns a maximum of 25 results.
+- [/transactions](https://developer.candid.org/reference/grants_transactions.md): Search for grant activity based on the criteria specified. Returns a maximum of 25 results.
+- [Getting started with PDF API](https://developer.candid.org/reference/getting-started-with-pdf-api.md)
+- [Financial Trends Analysis PDF](https://developer.candid.org/reference/fta-pdf.md)
+- [Profile PDF](https://developer.candid.org/reference/profile-pdf.md)
+- [/compliance](https://developer.candid.org/reference/compliance.md): Generate a PDF report to validate nonprofit status and eligibility with a 100% IRS-compliant charity check.
+- [/fta](https://developer.candid.org/reference/ftapdf.md): Use an EIN in the path parameter to get a PDF of a nonprofit's financial trends analysis.
+- [/profile](https://developer.candid.org/reference/propdf.md): Use an EIN in the path parameter to retrieve a PDF of a nonprofit's financials, people, DEI, and IRS compliance validation.
+- [Get started with News API](https://developer.candid.org/reference/get-started-with-news-api.md)
+- [Using News search parameters](https://developer.candid.org/reference/using-news-search-parameters.md)
+- [News example searches](https://developer.candid.org/reference/news-example-searches.md)
+- [/news/v1/search](https://developer.candid.org/reference/news_v1_search.md): Access the only API on the market delivering real-time, actionable news on nonprofits, philanthropy, and the social sector, curated by Candid from over 65,000 sources.
+- [Accept donations with Apple Pay](https://developer.candid.org/reference/accept-donations-with-apple-pay.md)
+- [/eligible/v1](https://developer.candid.org/reference/eligible.md): Validate nonprofit custom eligibility status of up to 25 organizations per call.
+- [Get started with Taxonomy API](https://developer.candid.org/reference/get-started-with-taxonomy-api.md)
+- [Overview of GraphQL](https://developer.candid.org/reference/overview-of-graphql.md)
+- [Taxonomy example searches](https://developer.candid.org/reference/taxonomy-example-searches.md)
+- [GuideStar's C# / .NET SDK](https://developer.candid.org/reference/guidestars-c-net-sdk.md): This library provides simplified access to the GuideStar APIs
+- [GuideStar's .NET core demonstration website](https://developer.candid.org/reference/guidestars-net-core-demonstration-website.md): Example project is written in .Net Core using Candid.GuideStarAPI NuGet package
+- [/essentials/v1](https://developer.candid.org/reference/essentials_v1-1.md): Find nonprofits using variable search criteria and explore essential information.
+- [/essentials/v2](https://developer.candid.org/reference/essentials_v2-1.md): Find nonprofits using variable search criteria and explore essential information.
+- [/essentials/v3](https://developer.candid.org/reference/essentials_v3-1.md): Make your searches more relevant and real-time with access to new filters and fields.
+- [/essentials/lookup](https://developer.candid.org/reference/essentials_lookup-1.md): Use the /lookup endpoint to retrieve a list of the tables that can be passed as a filter_name to the lookup detail endpoints. The tables and their contents can be used to generate dropdowns and filters in your system when using the Essentials API.
+- [/essentials/lookup/{filter_name}](https://developer.candid.org/reference/essentials_lookup_filter_name-1.md): Provides a list of all the human-readable search values within a specific filter_name table, which can then be used in search queries with the Essentials endpoints. Each array contains a table key, name value, and search value. The resulting search_value(s) can be passed as search values in the Essentials API.
+- [/essentials/lookup/{filter_name}/{key_or_value}](https://developer.candid.org/reference/essentials_lookup_filter_name_key_or_value-1.md): Lookup details on a specific filter using the known filter_name and key_or_value.  The resulting search_value can be passed as a search value in the Essentials API.
+
+## Pages
+- [API Support](https://developer.candid.org/page/support.md)
+
+## Changelog
+- [03.25.2026 - Essentials & Premier APIs v4 Released](https://developer.candid.org/changelog/essentials-premier-apis-v4-released.md)
+- [03.25.2026 - Demographics API supports search by Candid Entity ID](https://developer.candid.org/changelog/demographics-api-supports-search-by-candid-entity-id.md)
+- [1.7.2026 - Taxonomy API Updates](https://developer.candid.org/changelog/taxonomy-api-updates.md)
+- [05.06.2025 - Candid data now available on WRDS](https://developer.candid.org/changelog/05062025-candid-data-now-available-on-wrds.md)
+- [04.18.2025 - Charity Check PDF API v2 now available](https://developer.candid.org/changelog/charity-check-pdf-api-v2-now-available.md)
+- [04.01.2025 - Candid data now available on Snowflake](https://developer.candid.org/changelog/04012025-candid-data-now-available-on-snowflake.md)
+- [02.12.2025 - Premier API fields deprecated](https://developer.candid.org/changelog/2025-premier-api-fields-deprecated.md)
+- [09.13.2024 - Schools API up to date with 2022-2023 school year data](https://developer.candid.org/changelog/schools-api-contains-2022-2023-school-year-data.md)
+- [08.08.24 - Equity strategies fields deprecated in Premier API](https://developer.candid.org/changelog/0424-equity-strategies-fields-deprecated-in-premier-api.md)
+- [05.03.24 - Donation page URL now available in Essentials API](https://developer.candid.org/changelog/donation-page-url-now-available-in-essentials-api.md)

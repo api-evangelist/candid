@@ -1,0 +1,86 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Candid Essentials Lookup Search API",
+    "version": "v4"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Subscription-Key",
+      "value": "{{Subscription-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search Essentials v4",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.candid.org/essentials/v4",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search Candid's database of U.S. nonprofits using the v4 search endpoint, supporting flexible filters and faceted search."
+        },
+        {
+          "info": {
+            "name": "Search Essentials v3",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.candid.org/essentials/v3",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search Candid's database of U.S. nonprofits using the v3 search endpoint."
+        },
+        {
+          "info": {
+            "name": "Search Essentials v2",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.candid.org/essentials/v2",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search Candid's database of U.S. nonprofits using the v2 search endpoint."
+        },
+        {
+          "info": {
+            "name": "Search Essentials v1",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.candid.org/essentials/v1",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search Candid's database of U.S. nonprofits using the v1 search endpoint."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
