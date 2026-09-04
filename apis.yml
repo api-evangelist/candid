@@ -20,11 +20,12 @@ accessModel:
   try_now: true
   public: false
   label: Freemium · Self-serve signup
-  confidence: high
+  confidence: medium
   source:
   - plans
   - authentication
-  generated: '2026-07-22'
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/candid.png
 type: Index
@@ -49,7 +50,7 @@ tags_raw:
 access: 3rd-Party
 created: '2025-03-01'
 modified: '2026-05-19'
-position: Provider
+position: Producing
 specificationVersion: '0.23'
 description: >-
   Candid (formed from the 2019 merger of Foundation Center and GuideStar) helps social sector organizations advance
