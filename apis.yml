@@ -70,7 +70,7 @@ apis:
   baseURL: https://api.candid.org/premier
   tags:
   - Non-Profit
-  - Financials
+  - Financial
   - Profiles
   - PDF
   tags_raw:
