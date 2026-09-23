@@ -1,0 +1,1 @@
+{"resource":"https://mcp.candid.org/mcp","authorization_servers":["https://mcp.candid.org/"],"scopes_supported":["openid","profile","email","claudeai"],"bearer_methods_supported":["header"]}

@@ -1,8 +1,7 @@
 {
   "provider": "candid",
   "sources": [
-    "candid-lookup-api-openapi.yml",
-    "candid-search-api-openapi.yml"
+    "_ae-authored/candid-essentials-api-openapi.yml"
   ],
   "outputs": [
     "candid-lookup-api-openapi.yml",
@@ -11,6 +10,13 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "candid-essentials-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "candid-lookup-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "candid-search-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
