@@ -83,10 +83,21 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 components:
+  responses:
+    NotFound:
+      description: The requested resource was not found.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
   schemas:
     LookupItem:
       type: object
       description: A single lookup item record.
+      additionalProperties: true
+    LookupListResponse:
+      type: object
+      description: A response wrapping a list of lookup items.
       additionalProperties: true
     Error:
       type: object
@@ -97,17 +108,6 @@ components:
         message:
           type: string
       additionalProperties: true
-    LookupListResponse:
-      type: object
-      description: A response wrapping a list of lookup items.
-      additionalProperties: true
-  responses:
-    NotFound:
-      description: The requested resource was not found.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/Error'
   securitySchemes:
     apiKeyAuth:
       type: apiKey

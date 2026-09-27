@@ -73,7 +73,7 @@ apis:
   baseURL: https://api.candid.org/premier
   tags:
   - Non-Profit
-  - Financial
+  - Finance
   - Profiles
   - PDF
   tags_raw:
@@ -81,6 +81,7 @@ apis:
   - Financials
   - Profiles
   - PDF
+  - Financial
   properties:
   - type: Documentation
     url: https://developer.candid.org/reference/welcome

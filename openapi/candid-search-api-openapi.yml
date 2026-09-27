@@ -120,14 +120,14 @@ components:
       description: A generic search response object returned by Essentials endpoints.
       additionalProperties: true
   responses:
-    BadRequest:
-      description: The request was malformed or contained invalid parameters.
+    Unauthorized:
+      description: Authentication credentials are missing or invalid.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/Error'
-    Unauthorized:
-      description: Authentication credentials are missing or invalid.
+    BadRequest:
+      description: The request was malformed or contained invalid parameters.
       content:
         application/json:
           schema:
