@@ -95,10 +95,6 @@ components:
       type: object
       description: A single lookup item record.
       additionalProperties: true
-    LookupListResponse:
-      type: object
-      description: A response wrapping a list of lookup items.
-      additionalProperties: true
     Error:
       type: object
       description: Generic error response.
@@ -107,6 +103,10 @@ components:
           type: string
         message:
           type: string
+      additionalProperties: true
+    LookupListResponse:
+      type: object
+      description: A response wrapping a list of lookup items.
       additionalProperties: true
   securitySchemes:
     apiKeyAuth:

@@ -102,6 +102,10 @@ paths:
                 $ref: '#/components/schemas/SearchResponse'
 components:
   schemas:
+    SearchResponse:
+      type: object
+      description: A generic search response object returned by Essentials endpoints.
+      additionalProperties: true
     SearchRequest:
       type: object
       description: A generic search request object accepted by Essentials search endpoints.
@@ -115,19 +119,15 @@ components:
         message:
           type: string
       additionalProperties: true
-    SearchResponse:
-      type: object
-      description: A generic search response object returned by Essentials endpoints.
-      additionalProperties: true
   responses:
-    Unauthorized:
-      description: Authentication credentials are missing or invalid.
+    BadRequest:
+      description: The request was malformed or contained invalid parameters.
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/Error'
-    BadRequest:
-      description: The request was malformed or contained invalid parameters.
+    Unauthorized:
+      description: Authentication credentials are missing or invalid.
       content:
         application/json:
           schema:
