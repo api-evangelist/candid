@@ -101,24 +101,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/SearchResponse'
 components:
-  schemas:
-    SearchResponse:
-      type: object
-      description: A generic search response object returned by Essentials endpoints.
-      additionalProperties: true
-    SearchRequest:
-      type: object
-      description: A generic search request object accepted by Essentials search endpoints.
-      additionalProperties: true
-    Error:
-      type: object
-      description: Generic error response.
-      properties:
-        code:
-          type: string
-        message:
-          type: string
-      additionalProperties: true
   responses:
     BadRequest:
       description: The request was malformed or contained invalid parameters.
@@ -132,6 +114,24 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/Error'
+  schemas:
+    Error:
+      type: object
+      description: Generic error response.
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      additionalProperties: true
+    SearchResponse:
+      type: object
+      description: A generic search response object returned by Essentials endpoints.
+      additionalProperties: true
+    SearchRequest:
+      type: object
+      description: A generic search request object accepted by Essentials search endpoints.
+      additionalProperties: true
   securitySchemes:
     apiKeyAuth:
       type: apiKey
