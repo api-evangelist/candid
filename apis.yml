@@ -52,7 +52,7 @@ tags_raw:
   - Demographics
 access: 3rd-Party
 created: '2025-03-01'
-modified: '2026-05-19'
+modified: '2026-10-06'
 position: Producing
 specificationVersion: '0.23'
 description: >-
@@ -226,6 +226,8 @@ apis:
   - type: Portal
     url: https://developer.candid.org/
 common:
+  - url: https://candid.org/blogs/
+    type: Blog
   - type: AgenticAccess
     url: agentic-access/candid-agentic-access.yml
   - type: DomainSecurity
