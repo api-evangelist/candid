@@ -1,83 +1,17 @@
-generated: '2026-07-15'
+generated: '2026-09-23'
 method: generated
-source: openapi/candid-essentials-api-openapi.yml
+source: openapi/candid-lookup-api-openapi.yml, openapi/candid-search-api-openapi.yml
 description: Recommended x-agentic-access execution contracts, classified heuristically from
   the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
   audience per deployment. See research/curity/agentic-governance/.
 summary:
   operations: 7
   by_action_class:
-    acting: 4
-    connected: 3
+    connected: 7
   by_consequence:
-    write: 4
-    read: 3
+    read: 7
   human_in_the_loop_required: 0
 operations:
-- path: /v4
-  method: post
-  operationId: searchEssentialsV4
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /v3
-  method: post
-  operationId: searchEssentialsV3
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /v2
-  method: post
-  operationId: searchEssentialsV2
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /v1
-  method: post
-  operationId: searchEssentialsV1
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
 - path: /lookup
   method: get
   operationId: listLookupFilters
@@ -101,6 +35,46 @@ operations:
 - path: /lookup/{filter_name}/{key_or_value}
   method: get
   operationId: getLookupByFilterAndKey
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v4
+  method: post
+  operationId: searchEssentialsV4
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v3
+  method: post
+  operationId: searchEssentialsV3
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v2
+  method: post
+  operationId: searchEssentialsV2
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1
+  method: post
+  operationId: searchEssentialsV1
   x-agentic-access:
     action-class: connected
     consequence: read
