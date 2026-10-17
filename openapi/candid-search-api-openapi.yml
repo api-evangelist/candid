@@ -115,6 +115,14 @@ components:
           schema:
             $ref: '#/components/schemas/Error'
   schemas:
+    SearchResponse:
+      type: object
+      description: A generic search response object returned by Essentials endpoints.
+      additionalProperties: true
+    SearchRequest:
+      type: object
+      description: A generic search request object accepted by Essentials search endpoints.
+      additionalProperties: true
     Error:
       type: object
       description: Generic error response.
@@ -123,14 +131,6 @@ components:
           type: string
         message:
           type: string
-      additionalProperties: true
-    SearchResponse:
-      type: object
-      description: A generic search response object returned by Essentials endpoints.
-      additionalProperties: true
-    SearchRequest:
-      type: object
-      description: A generic search request object accepted by Essentials search endpoints.
       additionalProperties: true
   securitySchemes:
     apiKeyAuth:
