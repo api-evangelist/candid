@@ -1,21 +1,35 @@
 {
   "provider": "candid",
   "sources": [
-    "_ae-authored/candid-essentials-api-openapi.yml"
+    "_original/candid-openapi.json"
   ],
   "outputs": [
-    "candid-lookup-api-openapi.yml",
-    "candid-search-api-openapi.yml"
+    "candid-essentials-api-openapi.yml",
+    "candid-lookup-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
   "notes": [
-    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
-    "candid-essentials-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "apis.yml register: already-registered"
+    "1 archived document(s) dropped as subsets of other archived documents",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "candid-openapi.json: upgraded openapi 3.0.1 -> OpenAPI 3.2.0",
+    "candid-openapi.json: tagged paths POST /v1 -> Essentials",
+    "candid-openapi.json: tagged paths POST /v2 -> Essentials",
+    "candid-openapi.json: tagged paths POST /v3 -> Essentials",
+    "candid-openapi.json: tagged paths POST /v4 -> Essentials",
+    "candid-openapi.json: tagged paths GET /lookup -> Lookup",
+    "candid-openapi.json: tagged paths GET /lookup/{filter_name} -> Lookup",
+    "candid-openapi.json: tagged paths GET /lookup/{filter_name}/{key_or_value} -> Lookup",
+    "candid-openapi.json: declared missing tag: Essentials",
+    "candid-openapi.json: declared missing tag: Lookup",
+    "superseded outputs removed: candid-search-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 9 total)"
   ],
   "skipped": [
+    "_ae-authored/candid-essentials-api-openapi.yml: archived document superseded by a larger archived document",
     "candid-lookup-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "candid-search-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]

@@ -211,16 +211,16 @@ apis:
     url: https://developer.candid.org/reference/welcome
   - type: Portal
     url: https://developer.candid.org/
-- aid: candid:candid-search-api
-  name: Candid Search API
-  description: Operations for searching the Candid nonprofit database.
+- aid: candid:candid-essentials-api
+  name: Candid Essentials API
+  description: The Essentials API from Candid — 4 operation(s) for essentials.
   humanURL: https://developer.candid.org/reference/welcome
-  baseURL: https://api.candid.org/essentials
+  baseURL: https://api.candid.org/premier
   tags:
-  - Search
+  - Essentials
   properties:
   - type: OpenAPI
-    url: openapi/candid-search-api-openapi.yml
+    url: openapi/candid-essentials-api-openapi.yml
   - type: Documentation
     url: https://developer.candid.org/reference/welcome
   - type: Portal
