@@ -1,4 +1,4 @@
-# Candid (candid)
+# Candid
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,212 +66,135 @@
 
 Candid (formed from the 2019 merger of Foundation Center and GuideStar) helps social sector organizations advance their missions by sharing information, breaking down barriers, and improving giving. Candid maintains the most comprehensive set of data on U.S. nonprofits, foundations, grants, and philanthropy, and exposes that data through a family of developer APIs — Essentials, Premier, Charity Check, Demographics, Grants, News, Taxonomy, Eligibility, and PDF/Bulk variants — available through the Candid Developer Portal.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/candid/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/candid/refs/heads/main/apis.yml)
+**Areas:** Charities · Donations · Non-Profit · Philanthropy · Foundations · Grants · 990s · Demographics
 
-## Scope
+## Candid on APIs.io
 
-- **Type:** Index
-- **Position:** Provider
-- **Access:** 3rd-Party
+Everything profiled for Candid is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/candid/](https://apis.io/providers/candid/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (9)
 
-- Charities
-- Donations
-- Non-Profits
-- Philanthropy
-- Foundations
-- Grants
-- 990s
-- Demographics
+- [Candid Premier API](https://apis.io/apis/candid/premier-api/) — Deep nonprofit profile data. Returns comprehensive records for a given organization including financials, programs, leadership, board, grants received and…
+- [Candid Charity Check API](https://apis.io/apis/candid/charity-check-api/) — Real-time nonprofit verification and compliance screening used for due diligence, donation compliance, and tax-deductibility checks. Returns IRS 501(c)(3)…
+- [Candid Demographics API](https://apis.io/apis/candid/demographics-api/) — Structured demographic data voluntarily provided by nonprofits about their staff, board, and populations served. Enables funders and platforms to analyze…
+- [Candid Grants API](https://apis.io/apis/candid/grants-api/) — Access to Candid's global grants dataset — summary statistics, funders, recipients, and individual transaction records. Useful for philanthropic…
+- [Candid News API](https://apis.io/apis/candid/news-api/) — Search and retrieve philanthropic news content from Candid's curated news database covering funders, grantees, sector trends, and policy. Supports…
+- [Candid Taxonomy API](https://apis.io/apis/candid/taxonomy-api/) — Returns Candid's philanthropic classification system (subject, population, support-strategy, and geographic area taxonomies) so integrators can consistently…
+- [Candid Nonprofit Eligibility API](https://apis.io/apis/candid/nonprofit-eligibility-api/) — Evaluates whether a given nonprofit is eligible to receive a grant or donation based on configurable rules — IRS status, country, OFAC, custom program…
+- [Candid Lookup API](https://apis.io/apis/candid/candid-lookup-api/) — Operations for retrieving lookup values and filter metadata.
+- [Candid Search API](https://apis.io/apis/candid/candid-search-api/) — Operations for searching the Candid nonprofit database.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-03-01
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### Candid Essentials API
+Model Context Protocol servers that expose the API to agents.
 
-Core nonprofit search and lookup. Provides fast search over Candid's database of U.S. nonprofits by name, EIN, location, NTEE code, size, and more. Returns summary records suitable for autocompletes, lookups, and basic-verification flows. Available in versions v1–v4 with POST and GET variants.
+- [candid](https://apis.io/servers/candid/candid/)
 
-- **Human URL:** [https://developer.candid.org/reference/welcome](https://developer.candid.org/reference/welcome)
-- **Base URL:** `https://api.candid.org/essentials`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- Nonprofits
-- Search
-- Lookup
+- [Candid Agentic Access](https://apis.io/agentic-access/candid/candid-agentic-access/)
 
-#### Properties
+#### Collections (3)
 
-- [Documentation](https://developer.candid.org/reference/welcome)
-- [Portal](https://developer.candid.org/)
-- [OpenAPI](openapi/candid-essentials-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/candid-essentials-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/candid-essentials-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-### Candid Premier API
+- [Candid Essentials API](https://apis.io/collections/candid/open-candid-essentials-api/)
+- [Candid Essentials Lookup API](https://apis.io/collections/candid/open-candid-lookup-api/)
+- [Candid Essentials Lookup Search API](https://apis.io/collections/candid/open-candid-search-api/)
 
-Deep nonprofit profile data. Returns comprehensive records for a given organization including financials, programs, leadership, board, grants received and awarded, operating details, affiliations, and FTA (Financial Trend Analysis). Supports a Profile PDF generation endpoint for building ready-to-share nonprofit briefs.
+#### Security (2)
 
-- **Human URL:** [https://developer.candid.org/reference/welcome](https://developer.candid.org/reference/welcome)
-- **Base URL:** `https://api.candid.org/premier`
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Candid Authentication](https://apis.io/security/candid/candid-authentication/)
+- [Candid Domain Security](https://apis.io/security/candid/candid-domain-security/)
 
-- Nonprofits
-- Financials
-- Profiles
-- PDF
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://developer.candid.org/reference/welcome)
-- [Portal](https://developer.candid.org/)
-- [Postman Collection](collections/candid-essentials-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/candid-essentials-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Candid Plans Pricing](https://apis.io/plans/candid/candid-plans-pricing/)
 
-### Candid Charity Check API
+#### Rate limits (1)
 
-Real-time nonprofit verification and compliance screening used for due diligence, donation compliance, and tax-deductibility checks. Returns IRS 501(c)(3) status, revocation history, public-charity / private- foundation classification, OFAC watchlist screening, and more. Offers national and state-level endpoints.
+Published request limits.
 
-- **Human URL:** [https://developer.candid.org/reference/welcome](https://developer.candid.org/reference/welcome)
-- **Base URL:** `https://api.candid.org/charitycheck`
+- [Candid Rate Limits](https://apis.io/rate-limits/candid/candid-rate-limits/)
 
-#### Tags
+#### FinOps (1)
 
-- Compliance
-- Verification
-- IRS
-- Due Diligence
+What the API costs to run, by operation.
 
-#### Properties
+- [Candid Finops](https://apis.io/finops/candid/candid-finops/)
 
-- [Documentation](https://developer.candid.org/reference/welcome)
-- [Portal](https://developer.candid.org/)
-- [Postman Collection](collections/candid-essentials-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/candid-essentials-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+## Where to find this API
 
-### Candid Demographics API
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-Structured demographic data voluntarily provided by nonprofits about their staff, board, and populations served. Enables funders and platforms to analyze equity, diversity, and inclusion across the social sector.
-
-- **Human URL:** [https://developer.candid.org/reference/welcome](https://developer.candid.org/reference/welcome)
-- **Base URL:** `https://api.candid.org/demographics`
-
-#### Tags
-
-- Demographics
-- DEI
-- Nonprofits
-
-#### Properties
-
-- [Documentation](https://developer.candid.org/reference/welcome)
-- [Portal](https://developer.candid.org/)
-- [Postman Collection](collections/candid-essentials-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/candid-essentials-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Candid Grants API
-
-Access to Candid's global grants dataset — summary statistics, funders, recipients, and individual transaction records. Useful for philanthropic benchmarking, funder research, and grant-market intelligence.
-
-- **Human URL:** [https://developer.candid.org/reference/welcome](https://developer.candid.org/reference/welcome)
-- **Base URL:** `https://api.candid.org/grants`
-
-#### Tags
-
-- Grants
-- Funders
-- Recipients
-- Transactions
-
-#### Properties
-
-- [Documentation](https://developer.candid.org/reference/welcome)
-- [Portal](https://developer.candid.org/)
-- [Postman Collection](collections/candid-essentials-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/candid-essentials-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Candid News API
-
-Search and retrieve philanthropic news content from Candid's curated news database covering funders, grantees, sector trends, and policy. Supports customizable parameters for date range, topic, geography, and organization.
-
-- **Human URL:** [https://developer.candid.org/reference/welcome](https://developer.candid.org/reference/welcome)
-- **Base URL:** `https://api.candid.org/news`
-
-#### Tags
-
-- News
-- Philanthropy
-- Content
-
-#### Properties
-
-- [Documentation](https://developer.candid.org/reference/welcome)
-- [Portal](https://developer.candid.org/)
-- [Postman Collection](collections/candid-essentials-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/candid-essentials-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Candid Taxonomy API
-
-Returns Candid's philanthropic classification system (subject, population, support-strategy, and geographic area taxonomies) so integrators can consistently tag and query nonprofit, grant, and funder records.
-
-- **Human URL:** [https://developer.candid.org/reference/welcome](https://developer.candid.org/reference/welcome)
-- **Base URL:** `https://api.candid.org/taxonomy`
-
-#### Tags
-
-- Taxonomy
-- Classification
-- Metadata
-
-#### Properties
-
-- [Documentation](https://developer.candid.org/reference/welcome)
-- [Portal](https://developer.candid.org/)
-- [Postman Collection](collections/candid-essentials-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/candid-essentials-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Candid Nonprofit Eligibility API
-
-Evaluates whether a given nonprofit is eligible to receive a grant or donation based on configurable rules — IRS status, country, OFAC, custom program criteria — to automate grantmaking and giving workflows.
-
-- **Human URL:** [https://developer.candid.org/reference/welcome](https://developer.candid.org/reference/welcome)
-- **Base URL:** `https://api.candid.org/eligibility`
-
-#### Tags
-
-- Eligibility
-- Grantmaking
-- Compliance
-
-#### Properties
-
-- [Documentation](https://developer.candid.org/reference/welcome)
-- [Portal](https://developer.candid.org/)
-- [Postman Collection](collections/candid-essentials-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/candid-essentials-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [GitHub Organization](https://github.com/CandidOrg)
-- [LinkedIn](https://www.linkedin.com/company/candiddotorg)
 - [Website](https://candid.org)
-- [Developer Portal](https://developer.candid.org/)
-- [Data Portal](https://data.candid.org/reference/welcome-to-candids-data-portal)
-- [A P Is Overview](https://candid.org/use-our-data)
-- [Pricing And Access](https://candid.org/use-our-data)
-- [Privacy Policy](https://candid.org/privacy-policy)
-- [Terms of Service](https://candid.org/terms-of-use)
 - [Support](https://help.candid.org/)
-- [Integrations](https://candid.org/partners/)
-- [L L Ms Txt](https://developer.candid.org/llms.txt)
+- [Blog](https://candid.org/blogs/)
+- [Terms of service](https://candid.org/terms-of-use)
+- [Privacy policy](https://candid.org/privacy-policy)
+- [GitHub](https://github.com/CandidOrg)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.2** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 50.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 18.4 |
+
+**Agent readiness 52.6** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 15.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/candid/](https://apis.io/providers/candid/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Candid: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/candid/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
